@@ -4,9 +4,9 @@ const jwt = require('jsonwebtoken');
 var publicKEY = fs.readFileSync(path.join(__dirname + '/public.key'), 'utf8');
 var privateKEY = fs.readFileSync(path.join(__dirname + '/private.key'), 'utf8');
 
-var i = 'Krissio'; // Issuer (Software organization who issues the token)
-var s = 'admin@kriss.io'; // Subject (intended user of the token)
-var a = 'https://kriss.io'; // Audience (Domain within which this token will live and function)
+var i = 'Aql';
+var s = 'admin@aql.io';
+var a = 'https://aql.io';
 
 module.exports = {
   sign: (payload) => {
